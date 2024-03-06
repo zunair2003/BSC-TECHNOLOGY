@@ -1,0 +1,276 @@
+*{
+  padding: 0%;
+  margin: 0%;
+}
+.nav{
+  position: sticky;
+  top: 0%;
+  background-color: white;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+.burger{
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 15px;
+  cursor: pointer;
+}
+.line{
+  width: 33px;
+  background-color: black;
+  height: 4px;
+  margin: 5px 3px;
+}
+
+.left img{
+width: 10vh;
+height:10vh;
+border-radius: 50%;
+padding: 5px 40px;
+cursor: pointer;
+}
+.right{
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+}
+.right a {
+  list-style-type: none;
+  padding: 7px 40px;
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+.right a:hover{
+  color :rgb(83, 255, 140)
+}
+.sec{
+  background-color: white;
+  height: auto;
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: row;
+
+}
+.le-1{
+  margin-top: 90px;
+  width: 70%;
+  margin-right: 2%;
+}
+.le-2{
+  margin-top: 50px;
+  width: 27%;
+  height:auto;
+}
+.le-1 h1 {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.le-1 p{
+  margin-top: 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.le-2 img{
+  height: auto;
+  width: 100%;
+  margin-left:20px;
+  border: 2px solid rgb(242, 242, 242);
+  border-radius: 10px;
+}
+.left img:hover{
+  transform:scale(1.1);  
+}
+.sec-1{
+  background-color: white;
+  height: 100vh;
+  margin-top: 70px;
+}
+
+.sec-1 h1{
+  display: flex;
+  padding: 40px;
+  justify-content:center;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.fi-1{
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.con-1{
+  margin-top: 50px;
+  width: 60%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.con-2 img{
+  margin-top: 50px;
+  width: 250px;
+  height: 160px;
+  border: 3px solid #3d3d3d; 
+  border-radius: 10px;
+}
+.con-2 img:hover{
+  transform:scale(1.1);  
+  transition: 0.8s ease-in-out;
+}
+.fi-2{
+  flex-direction: row-reverse;
+  background-color: rgb(234, 234, 234);
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.con-3{
+  width: 60%;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+.con-3  p{
+  margin-left: 20px;
+}
+.con-3  h2{
+  margin-left: 20px;
+}
+.fi-1,.fi-2{
+  padding: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .burger{
+    display: block;
+  }
+  .left img{
+    width: 12vh;
+    height: 12vh;
+  }
+  .v-class{
+    opacity: 0;
+  }
+  .h-nav{
+    height: 50px;
+  }
+  nav {
+    flex-direction: column;
+  }
+  .left{
+    margin-top: 50px;
+  }
+  .right {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  }
+
+  .right a {
+    padding: 10px 40px;
+  }
+  .sec {
+    flex-direction: column;
+    display: flex;
+    justify-content: center; 
+  }
+
+  .le-1, .le-2 {
+    width: 100%;
+    margin: 0;
+  }
+
+  .le-2 img {
+    width: 100%;
+    height: auto;
+  }
+  .sec-1{
+    flex-direction: column;
+  }
+  .fi-1{
+    flex-direction: column;
+  }
+  .fi-2{
+    flex-direction: column;
+  }
+  .con-1 h2{
+    margin-top: 10px;
+  }
+  .con-1 p{
+    margin-top: 30px;
+  }
+  .con-2 img{
+    margin-top: 25px;
+  }
+  .le-2 img{
+    width: 80%;
+    height: 80%;
+  }
+}
+.form{
+  background-color: rgb(248, 248, 248);
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items:center ;
+  flex-direction: column;
+  
+}
+.inf h1{
+margin-top: 30px;
+}
+.form input{
+padding: 10px 90px;
+border-radius: 10px;
+margin-top: 10px;
+font-size: 16px;
+display: inline-block;
+font-size: large;
+box-shadow: 0 0 0 0.8;
+outline: none;
+}
+.form input::placeholder {
+  color: #000000;
+  font-size: 16px;
+}
+button {
+  font-size: 15px;
+  padding: 8px 15px;
+  margin-top: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: aliceblue;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(165, 224, 204); 
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #f8f9fa;
+  color: #555;
+
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecoll.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <title>BSC TECHN0LOGY</title>
+</head>
+<body>
+   <nav class="nav h-nav">
+    <div class="left v-class">
+    <img src="uet.jpg" alt="">
+    </div>
+    <div class="right v-class">
+   <a href="col-web.html">HOME</a>
+   <a href="#sec">ABOUT</a>
+   <a href="#form">CONTACT</a>
+   </div>
+   <div class="burger">
+       <div class="line"></div>
+       <div class="line"></div>
+       <div class="line"></div>
+</div>
+</nav>
+   <section class="sec">
+    <div class="le-1">
+        <h1> UNIVERSITY OF ENGINERING AND TECHNOLOGY AFFLIATED WITH UET</h1>
+        <p> The University of Engineering and Technology (UET) is a prestigious institution of higher learning that offers a wide range of programs in engineering and technology. With a rich history and a commitment to excellence, UET has established itself as a leader in the field of engineering education. The university is known for its rigorous academic programs, world-class faculty, and state-of-the-art facilities.</div>
+    <div class="le-2">
+        <img src="uit.jpg" alt="">
+    </div>
+   </section>
+   <section class="sec-1" id="sec">
+    <h1>ABOUT-US</h1>
+    <div class="fi-1">
+        <div class="con-1">
+            <h2>OUR MISSION:</h2>
+            <P>Our mission is to provide high-quality education and resources to students, empowering them to achieve their goals and contribute to society.</P>
+        </div>
+        <div class="con-2">
+            <img src="our.jpg" alt="">
+        </div>
+    </div>
+    <div class="fi-2">
+        <div class="con-3">
+            <h2>OUR RESONSIBILITY:</h2>
+            <P>We take our responsibility to our students, faculty, staff, and community seriously. We are committed to ethical behavior, accountability, and transparency in all our actions. We have established policies and procedures to handle complaints and issues, and we are dedicated to creating a safe and inclusive environment for all members of our community. We also strive to make a positive impact in the world, through our research, community engagement, and partnerships.</P>
+        </div>
+        <div class="con-2">
+            <img src="res.jpg" alt="">
+        </div>
+    </div>
+    <div class="fi-1">
+        <div class="con-1">
+            
+            <h2>OUR VISION:</h2>
+            <P>Our vision is to be a leading institution in engineering and technology, recognized for our innovation, excellence, and impact. We aim to shape the future of our field and make a positive difference in the world, through our research, education, and community engagement.</P>
+            </div>
+        <div class="con-2">
+            <img src="vis.avif" alt="">
+        </div>
+    </div>
+    <div class="inf"><h1>FOR CONTACT AND INFORMATION</h1></div>
+    <div class="form" id="form">
+ <input type="text"name="name" placeholder="Enter Your Name ">
+<br>
+                        <input type="email"name="name" placeholder="Enter Your Email ">
+                        <br>
+                        <input type="phone"name="name" placeholder="Enter Your Phone ">
+                        <br>
+                        <input type="text"name="name" placeholder="Enter Your Adress ">
+                        <br>
+                        <input type="text"name="name" placeholder="Discription ">
+                        <button>SUBMIT</button>
+    </div>
+    <footer>
+        © 2024 ENGINERING TOCHNOLOGY
+    </footer>
+</section>
+<script>
+const burger = document.querySelector('.burger');
+const nav = document.querySelector('nav');
+const right = document.querySelector('.right');
+const left = document.querySelector('.left');
+
+burger.addEventListener('click', () => {
+  left.classList.toggle('v-class');
+  right.classList.toggle('v-class');
+  nav.classList.toggle('h-nav');
+});
+</script>
+
+
+ 
+</body>
+</html>
